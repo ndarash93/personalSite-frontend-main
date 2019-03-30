@@ -1,0 +1,79 @@
+.navbar {
+  background: rgba(0, 117, 117, 0.767);
+  width: 100%;
+  top: 0;
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  z-index: 1;
+}
+
+.navbar i {
+  margin: 0 8px;
+  font-size: 16px;
+}
+
+.navbar::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.navbar-banner {
+  font-size: 18px;
+  position: absolute;
+  text-transform: uppercase;
+  color: #123456;
+  height: 100%;
+  left: 0;
+  display: inline-block;
+}
+
+.navbar ul {
+  margin: 0;
+  float: right;
+  list-style: none;
+}
+
+.navbar li {
+  margin-left: 50px;
+  display: inline-block;
+  position: relative;
+}
+
+.navbar-button, .navbar-button-active {
+  height: 100%;
+  width: 160px;
+  border: 5px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background: rgba(0, 0, 0, 0);
+  border: none;
+  color: #123456;
+}
+
+.navbar-button::first-letter, .navbar-button-active::first-letter {
+  text-transform: capitalize;
+}
+
+.navbar-button::before, .navbar-button-active::before {
+  content: '';
+  display: block;
+  top: 0;
+  left: 0;
+  height: 5px;
+  width: 0%;
+  background: #123456;
+  -webkit-transition: width ease-in-out 250ms;
+  transition: width ease-in-out 250ms;
+  position: absolute;
+}
+
+.navbar-button:hover::before, .navbar-button-active:hover::before {
+  width: 100%;
+}
+
+.navbar-button-active::before {
+  width: 100%;
+}
+/*# sourceMappingURL=navbar.css.map */

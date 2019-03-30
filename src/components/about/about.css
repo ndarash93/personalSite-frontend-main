@@ -1,0 +1,26 @@
+.about, .about-left-of-screen {
+  position: absolute;
+  top: 65px;
+  left: 0;
+  right: 0;
+  padding: 0;
+  margin: 0px;
+  display: -ms-grid;
+  display: grid;
+  grid-template: '... sidebar header header header header ...' '... sidebar header header header header ...' '... sidebar main main main main ...' '... sidebar main main main main ...' '... sidebar main main main main ...' '... sidebar main main main main ...' '... sidebar main main main main ...' '... sidebar main main main main ...' 'footer footer footer footer footer footer footer' 'footer footer footer footer footer footer footer';
+  grid-gap: 10px;
+  -ms-grid-columns: 1fr (2fr)[5] 1fr;
+      grid-template-columns: 1fr repeat(5, 2fr) 1fr;
+  -ms-grid-rows: (100px)[10];
+      grid-template-rows: repeat(10, 100px);
+  -webkit-transition: -webkit-transform 500ms;
+  transition: -webkit-transform 500ms;
+  transition: transform 500ms;
+  transition: transform 500ms, -webkit-transform 500ms;
+}
+
+.about-left-of-screen {
+  -webkit-transform: translateX(-100vw);
+          transform: translateX(-100vw);
+}
+/*# sourceMappingURL=about.css.map */

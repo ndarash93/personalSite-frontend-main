@@ -1,0 +1,7 @@
+@import "../../../utilities/variables";
+
+.footer-grid {
+    grid-area: footer;
+    background: $primary-color;
+    color: $primary-text;
+}

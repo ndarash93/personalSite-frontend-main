@@ -1,0 +1,132 @@
+@import '../../utilities/variables';
+
+.projects{
+    position: absolute;
+    top: 65px;
+    left: 0px;
+    right: 0px;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    transform: translateX(0);
+    transition: transform 500ms;
+}
+
+.projects-right-of-screen{
+    position: absolute;
+    top: 65px;
+    left: 0px;
+    padding: 0;
+    margin: 0;
+    transform: translateX(100vw);
+}
+
+.projects-left-of-screen{
+    position: absolute;
+    top: 65px;
+    left: 0px;
+    padding: 0;
+    margin: 0;
+    transform: translateX(-100vw);
+}
+
+
+.projects-root{
+    position: relative;
+    width: 80%;
+    height: 100%;
+    margin: 0 10%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.project-card {
+    position: relative;
+    width: 45%;
+    max-width: 800px;
+    height: 400px;
+    background: $primary-color;
+    margin: 0px 10px;
+
+    p {
+        position: absolute;
+        left: 0;
+        top: 80%;
+        margin: 0 0 0 10px;
+        color: black;
+    }
+
+    a {
+        position: absolute;
+        left: 0;
+        top: 90%;
+        margin: 0 0 0 10px;
+        text-decoration: none;
+    }
+
+    .image-cover {
+        position: absolute;
+        display: block;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 75%;
+        z-index: 2;
+
+        &::before {
+            content: '';
+            display: block;
+            position: absolute;
+            height: 3px;
+            width: 0;
+            background: white;
+            bottom: 6%;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 3;
+            transition: width ease-in-out 250ms;
+        }
+
+        &::after {
+            content: '';
+            display: block;
+            position: absolute;
+            width: 3px;
+            height: 0;
+            background: white;
+            right: 4%;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 3;
+            transition: height ease-in-out 250ms;
+        }
+
+        &:hover {
+            cursor: pointer;
+            background: rgba(0, 0, 0, .7);
+
+            &::before {
+                width: 95%;
+            }
+
+            &::after {
+                height: 95%;
+            }
+        }
+
+    }
+
+    img {
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 75%;
+        z-index: 1;
+    }
+}
+

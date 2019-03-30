@@ -1,0 +1,25 @@
+.portfolio, .portfolio-right-of-screen, .portfolio-left-of-screen {
+  background: rgba(0, 117, 117, 0.767);
+  position: absolute;
+  top: 100px;
+  left: 100px;
+  height: 500px;
+  width: 500px;
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+  -webkit-transition: -webkit-transform 500ms;
+  transition: -webkit-transform 500ms;
+  transition: transform 500ms;
+  transition: transform 500ms, -webkit-transform 500ms;
+}
+
+.portfolio-right-of-screen {
+  -webkit-transform: translateX(100vw);
+          transform: translateX(100vw);
+}
+
+.portfolio-left-of-screen {
+  -webkit-transform: translateX(-100vw);
+          transform: translateX(-100vw);
+}
+/*# sourceMappingURL=portfolio.css.map */

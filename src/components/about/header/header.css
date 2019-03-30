@@ -1,0 +1,20 @@
+.header-grid {
+  grid-area: header;
+  background: rgba(0, 117, 117, 0.767);
+  color: #123456;
+  position: relative;
+  padding: 0;
+}
+
+.name {
+  margin: 0 auto;
+  padding: 0;
+  font-size: 4em;
+  font-weight: bold;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+/*# sourceMappingURL=header.css.map */
