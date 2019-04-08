@@ -1,6 +1,14 @@
 .footer-grid {
   grid-area: footer;
-  background: rgba(0, 117, 117, 0.767);
+  background: #1B1B1B;
   color: #123456;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10% 30%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 /*# sourceMappingURL=footer.css.map */

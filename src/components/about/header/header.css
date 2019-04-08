@@ -1,6 +1,6 @@
 .header-grid {
   grid-area: header;
-  background: rgba(0, 117, 117, 0.767);
+  background: #1B1B1B;
   color: #123456;
   position: relative;
   padding: 0;

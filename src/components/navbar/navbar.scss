@@ -14,6 +14,10 @@
         margin: 0 8px;
         font-size: 16px;
     }
+
+    @media (max-width: $extra-large) {
+
+    }
 }
 
 .navbar::after {
@@ -32,26 +36,114 @@
     display: inline-block;
 }
 
+.navbar-dropdown-button{
+    height: 100%;
+    width: 50px;
+    padding-top: 28px;
+    padding-bottom: 28px;
+    background: transparent;
+    border: none;
+    float: right;
+    display: none;
+    cursor: pointer;
+    position: relative;
+
+    @media(max-width: $large){
+        display: block;
+    }
+}
+
+.dropdown-effect{
+    position: absolute;
+    height: 4px;
+    top: 50%;
+    width: 80%;
+    left: 10%;
+    background: black;
+    transform: translateY(-50%);
+
+    &::before{
+        content: '';
+        position: absolute;
+        height: 4px;
+        top: -200%;
+        width: 100%;
+        background: black;
+        transform: translateX(-50%);
+    }
+
+    &::after{
+        content: '';
+        position: absolute;
+        height: 4px;
+        top: 200%;
+        width: 100%;
+        background: black;
+        transform: translateX(-50%);
+    }
+}
+
 .navbar ul{
     margin: 0;
     float: right;
     list-style: none;
 
+    @media (max-width: $extra-large){
+
+    }
+
+    @media (max-width: $large){
+        //visibility: hidden;
+        float: none;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        background: $background-color;
+        padding: 0;
+    }
+
+    @media (max-width: $medium) {
+        
+    }
 }
+
+.navbar-open{
+    @media(max-width: $large){
+        display: block;
+    }
+}
+
+.navbar-closed{
+    @media(max-width: $large){
+        display: none;
+    }
+}
+
 
 .navbar li{
     margin-left: 50px;
     display: inline-block;
     position: relative;
+
+    @media (max-width: $large) {
+        display: block;
+        margin: 0;
+        padding: 1em 2em;
+        border-bottom: solid $background-color*1.1 1px;
+        
+        &:last-child{
+            border: none;
+        }
+    }
+
 }
 
 .navbar-button{
     height: 100%;
     width: 160px;
-    border: 5px;
     padding-top: 20px;
     padding-bottom: 20px;
-    background: rgba(0, 0, 0, 0);
+    background: transparent;
     border: none;
     color: $primary-text;
 }

@@ -10,8 +10,15 @@ class Footer extends Component{
     render(){
         return(
             <div className="footer-grid">
-                <p>Footer</p>
-                <i className="fas fa-poll-h"></i>
+                <div className="sub-footer">
+                    <i className="fab fa-github"></i>   
+                </div>
+                <div className="sub-footer">
+                    <i className="fab fa-twitter"></i>
+                </div>
+                <div className="sub-footer">
+                    <i className="fab fa-facebook"></i>   
+                </div>
             </div>
         )
     }

@@ -4,4 +4,7 @@
     grid-area: footer;
     background: $primary-color;
     color: $primary-text;
+    display: flex;
+    padding: 10% 30%;
+    flex-direction: row;
 }
