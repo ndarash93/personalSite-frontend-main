@@ -12,7 +12,8 @@ body {
   padding: 0;
   height: 100%;
   width: 100%;
-  background-image: url(https://unsplash.it/1001?blur);
+  background-image: url(https://unsplash.it/932/1413);
+  background-repeat: no-repeat;
   background-size: cover;
   overflow-x: hidden;
   font-family: "RobotoMono", monospace;
@@ -35,8 +36,8 @@ body {
   background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0)), to(black));
   background: linear-gradient(to right, rgba(0, 0, 0, 0), black);
   top: 0;
-  bottom: 0;
   right: 0;
+  height: 100vh;
   width: 200px;
   -webkit-transform: translateX(80%);
           transform: translateX(80%);
@@ -72,8 +73,8 @@ body {
   background: -webkit-gradient(linear, left top, right top, from(black), to(rgba(0, 0, 0, 0)));
   background: linear-gradient(to right, black, rgba(0, 0, 0, 0));
   top: 0;
-  bottom: 0;
   left: 0;
+  height: 100vh;
   width: 200px;
   -webkit-transform: translateX(-80%);
           transform: translateX(-80%);

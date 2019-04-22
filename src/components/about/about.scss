@@ -58,6 +58,24 @@
         grid-template-rows: repeat(10, minmax(100px, 1fr));
 
     }
+
+    @media (max-width: $medium) {
+        grid-template: 
+        'header'
+        'sidebar'
+        'sidebar'
+        'sidebar'
+        'main'
+        'main'
+        'main'
+        'main'
+        'main'
+        'footer'
+        'footer';
+        //grid-template-columns: 1fr;
+        grid-template-rows: repeat(11, minmax(100px, 1fr));
+
+    }
 }
 
 .about-left-of-screen{

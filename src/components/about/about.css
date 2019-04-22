@@ -49,6 +49,14 @@
   }
 }
 
+@media (max-width: 900px) {
+  .about, .about-left-of-screen {
+    grid-template: 'header' 'sidebar' 'sidebar' 'sidebar' 'main' 'main' 'main' 'main' 'main' 'footer' 'footer';
+    -ms-grid-rows: (minmax(100px, 1fr))[11];
+        grid-template-rows: repeat(11, minmax(100px, 1fr));
+  }
+}
+
 .about-left-of-screen {
   -webkit-transform: translateX(-100vw);
           transform: translateX(-100vw);

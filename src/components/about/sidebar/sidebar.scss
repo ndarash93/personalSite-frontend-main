@@ -41,20 +41,6 @@
     border-radius: 50%;
     padding: 0;
     
-    &::before {
-        content: '';
-        position: absolute;
-        display: block;
-        box-sizing: border-box;
-        height: 96%;
-        width: 96%;
-        margin: 2%;
-        border-top-style: solid;
-        border-radius: 50%;
-        z-index: 4;
-    }
-
-
     &:hover {
         background: rgba(0, 0, 0, .7);
         cursor: pointer;

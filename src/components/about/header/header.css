@@ -1,20 +1,41 @@
 .header-grid {
   grid-area: header;
   background: #1B1B1B;
-  color: #123456;
+  color: #2db2c8;
   position: relative;
   padding: 0;
 }
 
 .name {
+  white-space: nowrap;
   margin: 0 auto;
   padding: 0;
-  font-size: 4em;
+  font-size: 7em;
   font-weight: bold;
   position: absolute;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+}
+
+@media (max-width: 1600px) {
+  .name {
+    font-size: 5em;
+  }
+}
+
+@media (max-width: 1200px) {
+  .name {
+    font-size: 4.5em;
+  }
+}
+
+@media (max-width: 900px) {
+  .name {
+    font-size: 3.5em;
+    white-space: normal;
+    text-align: center;
+  }
 }
 /*# sourceMappingURL=header.css.map */

@@ -1,7 +1,7 @@
 .main-grid {
   grid-area: main;
   background: #1B1B1B;
-  color: #123456;
+  color: #2db2c8;
 }
 
 .main-grid ul {
@@ -27,7 +27,7 @@
 
 .company {
   font-size: 1.5em;
-  color: #63ffff;
+  color: #f8ffff;
   margin: 0;
 }
 

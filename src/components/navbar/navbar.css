@@ -23,7 +23,7 @@
   font-size: 18px;
   position: absolute;
   text-transform: uppercase;
-  color: #123456;
+  color: #2db2c8;
   height: 100%;
   left: 0;
   display: inline-block;
@@ -135,7 +135,7 @@
   padding-bottom: 20px;
   background: transparent;
   border: none;
-  color: #123456;
+  color: #2db2c8;
 }
 
 .navbar-button::first-letter, .navbar-button-active::first-letter {
@@ -149,7 +149,7 @@
   left: 0;
   height: 5px;
   width: 0%;
-  background: #123456;
+  background: #2db2c8;
   -webkit-transition: width ease-in-out 250ms;
   transition: width ease-in-out 250ms;
   position: absolute;
